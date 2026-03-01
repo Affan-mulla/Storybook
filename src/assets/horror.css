@@ -1,0 +1,111 @@
+/* ============================
+      GLOBAL STYLING
+=============================== */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: #111;
+  border-bottom: 2px solid #222;
+}
+
+header h5 {
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* ============================
+          CONTAINER
+=============================== */
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding: 40px 0px;
+}
+
+/* ============================
+         STORY CARD
+=============================== */
+.storylist {
+  background: #ffffff;
+  width: 400px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 0 8px #00000020;
+  padding: 16px;
+  transition: 0.2s;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 180px auto auto auto;
+  row-gap: 12px;
+  overflow: hidden;
+}
+
+/* Simple Hover (minor project friendly) */
+.storylist:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px #00000030;
+}
+
+/* Remove blood drip line */
+.storylist::after {
+  content: none;
+}
+
+/* ============================
+       TITLE SECTION
+=============================== */
+.storylist-content h2 {
+  color: #333;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* ============================
+          IMAGE
+=============================== */
+.storylist img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.25s;
+}
+
+.storylist:hover img {
+  filter: brightness(100%);
+}
+
+/* ============================
+          SUMMARY TEXT
+=============================== */
+.storylist p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================
+          BUTTON
+=============================== */
+.button {
+  text-align: center;
+}
+
+.btn-text {
+  padding: 10px 20px;
+  background: #444;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-text:hover {
+  background: #000;
+}

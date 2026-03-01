@@ -1,7 +1,5 @@
 # 📖 StoryBook — Full Project Specification
 
-> **Agent Reference Document** — Follow this spec precisely when scaffolding and building the StoryBook web application.
-
 ---
 
 ## 🏗️ Project Overview
@@ -645,5 +643,5 @@ Not authenticated → Redirect to /login → redirect back after login
 - [ ] Firestore rules prevent non-admin writes to `stories` collection
 - [ ] `fullContent` and `audioURL` fields are rendered only inside `ProtectedRoute`-wrapped pages
 - [ ] Admin route is protected by both auth check and role check
-- [ ] No Firebase Storage rules needed (Firebase Storage is not used)#   S t o r y b o o k  
- 
+- [ ] No Firebase Storage rules needed (Firebase Storage is not used)
+- [ ] Validate file types and sizes on the client before upload (optional but recommended)

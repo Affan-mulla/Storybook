@@ -1,0 +1,125 @@
+/* ===== BACKGROUND ===== */
+body {
+  background: linear-gradient(#f7faff, #e3f3ff);
+  font-family: "Comic Sans MS", "Poppins", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.kids-header {
+  background: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid #ffd6e8;
+  z-index: 10;
+}
+
+.kids-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ff4d88;
+  text-shadow: 1px 1px 2px #ffb3c6;
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== BACK BUTTON ===== */
+.kids-back-btn {
+  background: #ff7fa8;
+  color: white;
+  padding: 8px ;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.2s;
+  
+}
+
+.kids-back-btn:hover {
+  background: #ff4d88;
+  transform: scale(1.05);
+}
+
+/* ===== CARDS CONTAINER ===== */
+.kids-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* ===== CARD ===== */
+.kids-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.kids-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== CARD TITLE ===== */
+.kids-card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+/* ===== IMAGE ===== */
+.kids-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+/* ===== SUMMARY ===== */
+.kids-card-summary {
+  text-align: center;
+  margin: 15px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+/* ===== WATCH BUTTON ===== */
+.kids-watch-btn {
+  background:transparent;
+  color: #000;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.2s;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.kids-watch-btn:hover {
+  background: #00b4ff;
+  color: rgb(28, 26, 26);
+  transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.kids-footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 40px;
+  border-top: 3px solid #c1e8ff;
+  font-weight: bold;
+  color: #444;
+}

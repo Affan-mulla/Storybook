@@ -1,0 +1,137 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background-color: #fef6e4;
+  border-bottom: 2px solid #ffcb77;
+}
+
+header h5 {
+  font-size: 2rem;
+  color: #ff8c42;
+  margin: 0;
+}
+
+/* Container for all stories */
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Story card */
+.storylist {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.storylist:hover {
+  transform: translateY(-5px);
+}
+
+/* Content inside card */
+.storylist-content {
+  padding: 1rem;
+}
+
+.storylist-content h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+/* ✅ Uniform image style */
+.storylist-content img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+/* ✅ Uniform paragraph style */
+.storylist-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+/* Button container */
+.button {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+/* Styled Link button */
+.btn-text {
+  background-color: #ff8c42;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-text:hover {
+  background-color: #e6762d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storylist {
+    width: 90%;
+  }
+}
+
+/* Remove unused or invalid selectors */
+h2 {
+  height: fit-content;
+}
+p-text {
+  background-color: #ff8c42;
+  color: white;/* General reset and base styling */
+
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+p {
+  padding: 1rem;
+  text-align: center;
+
+  margin-top: auto;
+}
