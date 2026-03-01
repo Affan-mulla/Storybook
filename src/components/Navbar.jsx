@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: "Originals", path: "/discover?filter=originals" },
+    { name: "Home", path: "/" },
     { name: "Trending", path: "/trending" },
     { name: "Discover", path: "/discover" },
   ];
@@ -48,9 +48,6 @@ export default function Navbar() {
 
         {/* Right: Actions */}
         <div className="hidden md:flex items-center gap-5">
-          <button className="text-foreground hover:text-primary transition-colors">
-            <FaSearch className="text-lg" />
-          </button>
 
           {role === "admin" && (
             <Link

@@ -229,7 +229,7 @@ export default function Home() {
         <section className="w-full px-4 sm:px-6 py-16 bg-background">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             <div className="flex overflow-x-auto no-scrollbar gap-2 sm:gap-6 pb-2 md:pb-0 font-lora font-bold">
-              {['Recommended', 'Popular', 'Originals', "What's New"].map(tab => (
+              {['Recommended', 'Popular', "What's New"].map(tab => (
                  <button 
                   key={tab} 
                   onClick={() => setActiveRecTab(tab)}

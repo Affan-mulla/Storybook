@@ -22,10 +22,6 @@ export default function Discover() {
           : [],
       ),
     ));
-    // ensure "Originals" is an option if forced by URL even if somehow no story has it yet, though usually it will
-    if (!uniqueCategories.includes("Originals")) {
-       uniqueCategories.push("Originals");
-    }
     return ["All", ...uniqueCategories];
   }, [stories]);
 
