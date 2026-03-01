@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { registerUser, loginWithGoogle } from "../firebase/auth";
 import { db } from "../firebase/config";
+import { FaFeatherAlt } from "react-icons/fa";
 
 export default function Register() {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ export default function Register() {
         <div className="text-center">
           <Link to="/" className="inline-block mb-4 hover:scale-105 transition-transform">
             <div className="h-12 w-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center text-xl font-bold mx-auto shadow-sm">
-              SB
+              <FaFeatherAlt/>
             </div>
           </Link>
           <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Create Account</h1>
