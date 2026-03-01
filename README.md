@@ -2,9 +2,10 @@
 
 ## How to Run the Project
 
-### 1) Prerequisites
-- Node.js 18+ (recommended)
-- npm
+### 1) Go into folder
+```bash
+cd storybook
+```
 
 ### 2) Install dependencies
 ```bash
